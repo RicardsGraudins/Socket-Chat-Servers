@@ -41,7 +41,7 @@ $(document).ready(function() {
 	function insertMessage() {
 		setDate();
 		updateScrollbar();
-		$('<div class="message new"><figure class="avatar"><img src="static/images/Cortana2.png" /></figure>' + $('#message-input').val() + '</div>').appendTo($('.mCSB_container')).addClass('new');
+		$('<div class="message new"><figure class="avatar"><img src="static/images/anon.png" /></figure>' + $('#message-input').val() + '</div>').appendTo($('.mCSB_container')).addClass('new');
 		socket.send('Anon_' + id + ': ' + $('#message-input').val());
 		$('#message-input').val('');
 	}
